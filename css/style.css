@@ -1,0 +1,1290 @@
+@font-face {
+    font-family:Montserrat;
+    font-style: normal;
+    font-display: swap;
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+* {
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+img {
+    max-width: 100%;
+}
+html {
+    font-family: 'Montserrat','sans-serif';
+}
+body {
+    background-color: #E5E5E5;
+    font-family: 'Montserrat';
+}
+body._lock{
+    overflow: hidden;
+}
+.container{
+    max-width: 1770px;
+    margin: 0 auto;
+
+}
+
+/* Header */
+.header{
+    max-height: 100px;
+    background-color: #fff;
+    width:auto;
+    z-index: 8;
+}
+.header__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 8;
+}
+.header__logo{
+    margin: 14px 0;
+    z-index: 6;
+
+}
+.header__nav{
+    display: flex;
+
+
+
+}
+
+.header__list{
+    margin-top: 39px;
+    margin-bottom: 39px;
+    display: flex;
+    flex: 0 1 20%;
+    justify-content:space-between;
+    white-space: nowrap;
+}
+.header__item{
+    margin-right: 85px;
+
+}
+.header__link{
+    line-height: 22px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #333;
+}
+.header__link:hover{
+    border-bottom: 2px solid #FF9900 ;
+}
+.header__link:focus{
+    border: 2px solid #FF9900;
+    outline: none;
+}
+.header__link:active{
+    color: #E1670E;
+    border-bottom: 2px solid #E1670E
+}
+.header__search{
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin: 38px 0;
+    background-image: url(../img/search.svg);
+    z-index: 6;
+    background-size: 25px ;
+}
+
+
+.header__search:hover{
+    background-image: url(../img/status=hover.svg);
+}
+.header__search:focus{
+    outline:#FF9900 2px solid;
+}
+.header__burger{
+    display: none;
+}
+/* .burger__icon{
+
+} */
+.burger__list > li{
+    position: relative;
+    margin: 0 0 0 20px;
+}
+.burger__link{
+    color:#232323;
+    font-size: 18px;
+}
+.burger__link:hover{
+    text-decoration: underline;
+}
+
+
+/* Hero */
+.hero{
+    margin-bottom: 100px;
+}
+.hero__container{
+    background-image: url(../img/low-angle-photo-of-balconies-24620151.png);
+    height: 620px;
+}
+.hero__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 837px;
+    height: 420px;
+    margin: 100px 80px;
+    position:absolute;
+    z-index: 2;
+}
+.hero__header{
+    font-family: Montserrat;
+    font-style:normal;
+    font-weight:900;
+    font-size: 70px;
+    line-height: 85px;
+    margin: 0 0;
+    color: #fff;
+}
+.hero__description{
+    Font-family: "Montserrat";
+    Font-size: 24px;
+    Line-height: 29px;
+    Line-height: 100%;
+    color: #fff;
+    margin: 0 0;
+    margin-bottom: 90px;
+}
+.hero__button{
+    background-color: #FF9900;
+    padding: 24.83px 36.88px;
+    width: 280px;
+    height: 78px;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+    align-items: center;
+    color: #fff;
+    border: 0;
+}
+.hero__button:hover{
+    background: rgba(255, 153, 0, 0.7);
+}
+.hero__button:active{
+    background-color: #E1670E;
+}
+.swiper {
+    width: 100%;
+    height: 620px;
+  }
+  .image-1{
+      background-image: url(../img/low-angle-photo-of-balconies-24620151.png);
+  }
+  .image-2{
+    background-image: url(../img/apartment-apartment-building-architecture-building-323705\ 2.jpg);
+
+  }
+  .image-3{
+    background-image: url(../img/brown-and-blue-glass-building-2093076\ 2.jpg);
+
+  }
+
+/* Us */
+.us{
+    display: block;
+}
+.us__header{
+    font-size: 48px;
+    line-height: 59px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.us__description{
+    font-size: 16px;
+    line-height: 32px;
+    margin: 20px 0;
+    margin-bottom: 0;
+    margin-bottom: 50px;
+    max-width: 1235px;
+}
+.us__imageblock{
+    display:inline-block;
+    height: 622px;
+    width: 868px;
+    max-width: 868px;
+    background-image: url(../img/Rectangle2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+
+}
+.us__image{
+    display: flex;
+    justify-content: space-between;
+    height: 196px;
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.us__image-description{
+    color: white;
+    opacity: 1;
+    font-weight:bold;
+    font-size: 16px;
+    line-height: 32px;
+    max-width: 454px;
+    margin: 50px 0;
+    margin-left: 50px;
+}
+.us__image-button{
+    color: #fff;
+    padding:20px 38px;
+    font-weight: 700;
+
+    margin:68px 0;
+    margin-right: 50px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 3px solid #FF9900;
+}
+.us__image-button:hover{
+    background-color: #FF9900;
+}
+.us__image-button:active{
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+.us__imageblock-320{
+    display: none;
+}
+.us__Blocks{
+    display: flex;
+}
+.us__block{
+    width: 868px;
+    max-width: 868px;
+    height: 622px;
+    margin-left: 32px;
+}
+.us__block1{
+    height: 295px;
+    border: 1px solid #CACACA;
+    margin-bottom: 32px;
+
+}
+.us__block1-image{
+    margin: 65px 60px;
+    margin-right: 50px;
+    display: inline-block;
+    height: 165px;
+    width: 190px;
+    background-image: url(../img/Frame16.svg);
+
+}
+.us__block2{
+    height: 295px;
+    border: 1px solid #CACACA;
+
+}
+.us__block2-image{
+    margin: 65px 60px;
+    margin-right: 50px;
+    display: inline-block;
+    height: 165px;
+    width: 190px;
+    background-image: url(../img/Frame12.svg);
+
+}
+.us_block-text{
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-right: 118px;
+    display:inline-block;
+    width: 450px;
+    position: absolute;
+}
+.us__block-header{
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #333
+}
+.us__block-description{
+    font-size: 16px;
+    line-height: 32px;
+
+}
+
+/* How We Work */
+.HowWeWork{
+    display: block;
+}
+.HowWeWork__header{
+
+    font-size: 48px;
+    line-height: 59px;
+    color: #333;
+    margin-top: 100px;
+    margin-bottom: 50px;
+
+}
+.HowWeWork__step-list{
+    display: flex;
+    margin-bottom: 45px;
+}
+.HowWeWork__step-link{
+    margin-right: 85px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #333;
+}
+.HowWeWork__step-link:hover{
+    color: #FF9900;
+}
+.HowWeWork__step-link:active{
+    color: #E1670E;
+}
+.HowWeWork__step-link:focus{
+  border:#FF9900 2px solid
+
+}
+.bth-reset{
+    border:0;
+    background-color:transparent;
+    padding: 0;
+    cursor:pointer;
+}
+
+.HowWeWork__consultation{
+    width: 45%;
+}
+.HowWeWork__consultation-fullblock{
+    display: none;
+    flex-direction: row;
+}
+.HowWeWork__consultation-fullblock-active{
+    display: flex;
+}
+.HowWeWork__consultation-header{
+    display: block;
+    font-weight:700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333;
+    margin-bottom: 8px;
+}
+.HowWeWork__consultation-description{
+    font-size: 16px;
+    line-height: 32px;
+}
+.HowWeWork__consultation-button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.HowWeWork__consultation-more{
+    display: block;
+    color: #fff;
+    background-color: #FF9900;
+    align-items: center;
+    padding: 20px 38px;
+    border: 1px solid #FF9900 ;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 32px;
+}
+.HowWeWork__consultation-more:hover{
+    background-color: #F7B045;
+    border-color: #F7B045;
+}
+.HowWeWork__consultation-more:active{
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+.HowWeWork__consultation-contract{
+    display: block;
+    color: #333;
+    padding: 20px 38px;
+}
+.HowWeWork__consultation-contract:hover{
+    color: #fff;
+    background-color: #666;
+    border-color: #666;
+}
+.HowWeWork__consultation-contract:active{
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+.HowWeWork__image{
+    display: block;
+    width: 50%;
+    height: 472px;
+    background-image: url(../img/Rectangle18.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    margin-left: 142px
+}
+.im-2{
+    background-image: url(../img/Rectangle181.png);
+
+}
+.im-3{
+    background-image: url(../img/Rectangle19.png);
+}
+.im-4{
+    background-image: url(../img/Rectangle20.png);
+}
+
+/* Question */
+
+.question__header{
+    margin-top: 100px;
+    font-size: 48px;
+    line-height: 59px;
+    margin-bottom: 32px;
+}
+.question__container{
+    margin-bottom: 100px;
+}
+.question__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    border-top: 1px solid #CACACA;
+}
+.question__item:hover{
+    border-color: #FF9900;
+    border-bottom: 0.5px solid #FF9900;
+}
+.question__item:last-child{
+    border-bottom: 1px solid #CACACA;
+}
+.question__item:last-child:hover{
+    border-bottom: 1px solid #FF9900;
+}
+
+/* .question__image{
+    margin: 30px 0;
+    background-image: url(../img/+х.svg);
+    height: 50px;
+    width: 50px;
+} */
+/* .question__image:hover{
+    background-image: url(../img/+х-hover.svg);
+} */
+.question__word{
+    display: inline-block;
+    position: relative;
+    /* margin: 39px 0; */
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    padding-top: 32px !important;
+    padding-bottom: 32px !important;
+    /* background-image: url(../img/+х.svg) !important;
+    background-size: 50px !important;
+    background-repeat: no-repeat !important; */
+    background-position: right !important;
+    background-color: #E5E5E5 !important;
+    border: 0 !important;
+    font-family: 'Montserrat','sans-serif' !important;
+}
+.question__word:after{
+    content: "";
+    position: absolute;
+    left: 97%;
+    top: 25px;
+    background-image: url(../img/+х.svg) !important;
+    background-size: 50px !important;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat !important;
+    background-position:right !important;
+    transition: ease 0.5s ease-in-out 0.5s ;
+}
+.ui-state-active.question__word::after{
+    transform: rotate(45deg);
+    transition: ease 0.5s ease-in-out 0.5s ;
+
+}
+.question__word:hover{
+    color: #FF9900;
+}
+.question__description{
+    background-color: #E5E5E5 !important;
+}
+
+/* Footer */
+
+.footer{
+    background-color: #222;
+}
+.footer__container{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.info{
+    max-width: 258px;
+    height: 494px;
+    margin: 75px 0;
+
+}
+
+.info__list{
+    max-width: 252px;
+}
+.info__link{
+    color: #CACACA;
+    font-size: 18px;
+    line-height: 36px;
+    font-weight: 600;
+}
+.info__link:hover{
+    color: #FF9900;
+}
+.info__link:active{
+    color: #E1670E;
+}
+.info__logo{
+    color: #fff;
+}
+.info__message{
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+}
+.info__messenger:not(:last-child){
+    margin-right: 25px;
+}
+/* .info__messenger-link:hover{
+    color: #FF9900;
+
+} */
+
+.application{
+    max-width: 494px;
+    height: 570px;
+    margin: 25px 0;
+    margin-left: 50px;
+}
+.application__header{
+    font-size: 48px;
+    line-height: 59px;
+    color: #CACACA;
+    margin-bottom: 25px;
+
+}
+.application__input{
+    width: 100%;
+    padding: 14px 0;
+    padding-left: 24px;
+    color: #CACACA;
+    background-color:  #414141;
+    margin-bottom: 25px;
+    border: 0;
+    font-size: 16px;
+    line-height: 200%;
+}
+.application__input:hover{
+    background-color: #666;
+    border-color: #666;
+}
+.application__comment{
+    width: 100%;
+    height: 150px;
+    color: #CACACA;
+    background-color: #414141;
+    padding: 14px 0 104px 24px;
+}
+.application__comment:hover{
+    background-color: #666;
+    border-color: #666;
+}
+.application__input:active{
+    background-color: #666;
+    border-color: #666;
+}
+.application__comment:active{
+
+    background-color: #666;
+    border-color: #666;
+}
+.application__mainblock{
+    display: flex;
+    flex-direction: row;
+}
+.application__button{
+    display: inline-block;
+    color: #fff;
+    background-color: #FF9900;
+    padding: 19px 38px;
+    border: 0;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 32px;
+}
+.application__blockcheckbox{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 22px;
+    margin-top: 30px;
+
+}
+.application__button:hover{
+    background-color: #F7B045;
+    border-color: #F7B045;
+}
+.application__button:active{
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+.application_checkbox{
+    display:inline-block;
+    background-color: #414141;
+    border: 1px solid #CACACA;
+
+}
+.application__consent{
+    color: #CACACA;
+    font-size: 16px;
+    line-height: 200%;
+    margin-left: 4px;
+}
+
+
+
+.description{
+    max-width: 320px;
+    height: 363px;
+    margin: 137px 0;
+    margin-right: 75px;
+}
+.description__words{
+    font-size: 16px;
+    color: #CACACA;
+    line-height: 32px;
+    width: 100%;
+    height: 363px;
+}
+.description{
+    align-items: center;
+}
+@media (max-width: 1024px){
+    .header{
+        min-width: 1024px;
+    }
+    .container{
+        max-width: 924px;
+        margin: 0 auto;
+
+    }
+    /* Header */
+    .header__burger {
+        margin: 38px 0;
+        display: block;
+        z-index: 7;
+    }
+    .burger__icon{
+        width: 30px;
+        height: 23px;
+        display: inline-block;
+        z-index: 5;
+        cursor: pointer;
+        position: relative;
+    }
+    .burger__icon span,
+    .burger__icon::before,
+    .burger__icon::after{
+        left: 0;
+        position: absolute;
+        height: 10%;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: black;
+
+    }
+    .burger__icon::before,
+    .burger__icon::after{
+        content: "";
+    }
+    .burger__icon::before{
+        top: 0;
+    }
+    .burger__icon::after{
+        bottom: 0;
+    }
+    .burger__icon span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    }
+
+    .burger__icon._active span{
+        transform: scale(0) translate(0px, -50%);
+
+
+    }
+    .burger__icon._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0, -50%);
+    }
+    .burger__icon._active::after{
+        top: 50%;
+        transform: rotate(45deg) translate(0, 50%);
+    }
+    .burger__body{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-color: #00bfff;
+        padding: 100px 30px 30px 30px;
+        transition: left 0.3s ease 0s;
+
+    }
+    .burger__body._active{
+        left: 0;
+    }
+    .burger__body::before{
+        content: "";
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        height: 70px;
+    }
+    .burger__list{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .burger__list > li {
+        padding: 10px 0;
+        margin: 0px 0px 30px 0px;
+        flex-wrap: wrap;
+    }
+    .burger__list > li:last-child{
+        margin-bottom: 0;
+    }
+    .burger__link{
+        font-size: 24px;
+    }
+    .header__logo{
+        background-image: url(../img/Logo-1024.svg);
+        width: 150px;
+        height: 48px;
+        margin: 26px 0;
+    }
+    .header__nav{
+        display: none;
+    }
+    .header__search{
+        margin: 39px 0;
+    }
+    .hero__container{
+        display: none;
+        background-image: url(../img/low-angle-photo-of-balconies-24620152-1024.jpg);
+        height: 668px;
+        width: 924px;
+        background-size: 950px;
+    }
+    .hero__header{
+        font-size: 60px;
+        line-height: 73px;
+        font-weight: 800;
+    }
+    .hero__description{
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        margin-bottom: 60px ;
+
+    }
+    .hero__block{
+        margin: 160px 77px;
+
+    }
+    /* Us */
+    .us__header{
+        margin-top: 80px;
+        margin-bottom: 20px;
+    }
+    .us__description{
+        width: 925px;
+    }
+    .us__Blocks{
+        flex-direction: column;
+    }
+    .us__block{
+        margin-left: 0;
+        margin-top: 32px;
+    }
+    /* HowWeWork */
+    .HowWeWork__consultation{
+        width: 437px;
+    }
+    .HowWeWork__consultation-description{
+        display: inline;
+        width: 437px;
+        height: 576px;
+        font-size: 16px;
+        line-height: 200%;
+    }
+    .HowWeWork__consultation-button{
+        margin-top: 25px;
+    }
+    .HowWeWork__image{
+        background-image: url(../img/Rectangle18-1024.jpg);
+        width: 437px;
+        margin-left: 50px;
+        height: 703px;
+    }
+    /* Question */
+    .question__item:last-child{
+        margin-bottom: 80px;
+    }
+    /* Footer */
+    .description{
+        display: none;
+    }
+    .footer{
+        min-width: 1024px;
+        }
+
+}
+@media (max-width: 768px){
+    .header{
+        min-width: 768px;
+    }
+    .container{
+        width: 668px;
+        margin: 0 auto;
+    }
+    .header__container{
+        height: 69px;
+    }
+    .header__burger{
+        margin-top: 21px;
+        margin-bottom: 25px;
+    }
+    .header__logo{
+        margin: 10px 0;
+    }
+    .header__search{
+        margin: 22px 0;
+    }
+    /* Hero */
+    .hero__container{
+        background-image: url(../img/low-angle-photo-of-balconies-24620151-768.jpg);
+        width: 668px;
+        height: 662px;
+
+    }
+    .hero__block{
+        width: 588px;
+        margin: 160px 40px;
+    }
+    /* Us */
+    .us__description{
+        width: 668px;
+    }
+    .us__Blocks{
+        width: 668px;
+    }
+    .us__imageblock{
+        width: 668px;
+        background-image: url(../img/Rectangle2-758.png);
+    }
+    .us__image{
+        width: 668px;
+    }
+    .us__image-description{
+        width: 366px;
+        margin: 34px 0;
+        margin-left: 40px;
+        height: 128px;
+    }
+    .us__image-button{
+        margin: 68px 0;
+        margin-right: 40px;
+    }
+    .us__block{
+        width: 668px;
+
+    }
+    .us__block1{
+        height: 235px;
+    }
+    .us__block1-image{
+        background-image: url(../img/Frame16-758.svg);
+        width: 114px;
+        height: 99px;
+        margin: 68px 0;
+        margin-left: 40px;
+        margin-right: 16px;
+    }
+    .us_block-text{
+        width: 452px;
+        margin: 35px 0;
+        margin-right: 46px;
+    }
+    .us__block2{
+        height: 235px;
+    }
+    .us__block2-image{
+        background-image: url(../img/Frame12-758.svg);
+        width: 114px;
+        height: 99px;
+        margin: 68px 0;
+        margin-left: 40px;
+        margin-right: 16px;
+    }
+    /* HowWeWork */
+    .HowWeWork__header{
+        margin-top: 0;
+    }
+    .HowWeWork__consultation-fullblock{
+        flex-direction: column-reverse;
+    }
+    .HowWeWork__image{
+        background-image: url(../img/Rectangle18-758.jpg);
+        width: 668px;
+        height: 284px;
+        margin-left: 0;
+
+    }
+    .HowWeWork__consultation{
+        margin-top: 38px;
+        width: 667px;
+    }
+    .HowWeWork__consultation-description{
+        width: 667px;
+        height: 352px;
+    }
+    /* Footer */
+    .footer__container{
+        flex-direction: column-reverse;
+        height: 792px;
+    }
+    /* Info */
+    .info__list{
+        display: none;
+    }
+    .info__message{
+        margin-top: 16px;
+    }
+    .info{
+        margin: 50px 0;
+    }
+    /* Application */
+    .application{
+        margin: 0;
+    }
+    .application__header{
+        margin-top: 50px;
+    }
+    .footer{
+    min-width: 768px;
+    }
+}
+@media (max-width: 320px){
+    .header{
+        min-width:320px ;
+    }
+    .container{
+        width: 290px;
+        margin: 0 auto;
+    }
+    /* Hero */
+    .hero{
+        margin-bottom: 60px;
+    }
+    .hero__container{
+        background-image: url(../img/low-angle-photo-of-balconies-24620151-320.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 290px;
+        height: 308px;
+        position: relative;
+    }
+    .hero__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        align-content: center;
+    }
+    .hero__header{
+        margin-top: 60px;
+        width: 247px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 6px;
+    }
+    .hero__description{
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+        text-align: center;
+        width: 247px;
+        margin-bottom: 32px;
+    }
+    .hero__button{
+        padding: 5px 22px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: bold;
+        width: 162px;
+        height: 40px;
+
+    }
+    /* Us */
+    .us__header{
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+    }
+    .us__description{
+        width: 290px;
+        margin-bottom: 8px;
+    }
+    .us__imageblock{
+        display: none;
+    }
+    .us__imageblock-320{
+        display: flex;
+        min-height: 300px;
+        flex-direction: column;
+
+    }
+    .us__image-320{
+        background-image: url(../img/Rectangle2-320.jpg);
+        width: 290px;
+        height: 200px;
+    }
+    .us__image-320-description{
+        display: inline;
+        width: 290px;
+        height: 143px;
+        margin: 8px 0;
+        font-size: 14px;
+        line-height: 28px;
+
+    }
+    .us__image-320-button{
+        color: #FF9900;
+        width: 162px;
+        height: 40px;
+        border: 2px solid #FF9900;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 700;
+    }
+    .us__Blocks{
+        width: 290px;
+
+    }
+    .us__block{
+        width: 290px;
+    }
+    .us__block1{
+        display: flex;
+        flex-direction: column;
+        border: 0;
+        height: 300px;
+        justify-content: space-between;
+        margin-bottom: 32px;
+     }
+    .us_block-text{
+        width: 290px;
+        margin: 0;
+        padding: 0;
+        height: 200px;
+        position: relative;
+    }
+    .us__block1-image{
+        display: block;
+        background-image: url(../img/Frame39.svg);
+        width: 64px;
+        height: 49px;
+        margin: 0;
+        padding: 49px;
+        margin-bottom: 19px;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .us__block2{
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: space-between;
+    }
+    .us__block2-image{
+        display: block;
+        width: 64px;
+        width: 49px;
+        margin: 0;
+        padding: 49px;
+        background-image: url(../img/Frame38.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .us__block-header{
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .us__block-description{
+        font-size: 14px;
+        line-height: 28px;
+        font-weight: normal;
+    }
+    .us{
+        margin-bottom: 120px;
+
+    }
+    /* HowWeWork */
+    .HowWeWork__consultation{
+        width: 290px;
+        margin-top: 16px;
+    }
+    .HowWeWork__header{
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 500;
+    }
+    .HowWeWork__image{
+        background-image: url(../img/Rectangle18-320.png);
+        background-repeat: no-repeat;
+        width: 290px;
+        height: 160px;
+    }
+    .HowWeWork__step-list{
+        margin-bottom: 16px;
+        width: 290px;
+    }
+    .HowWeWork__step-link{
+        margin-right: 44px;
+        font-size: 14px;
+        line-height: 17px;
+        font-weight: normal;
+    }
+    .HowWeWork__consultation-header{
+        font-size: 18px;
+        line-height: 32px;
+        font-weight:600;
+    }
+    .HowWeWork__consultation-more{
+        margin-right: 10px;
+        font-size: 12px;
+        line-height: 15px;
+        width: 162px;
+        padding: 11px 14px 14px 15px;
+        height: 40px;
+        font-weight: bold;
+    }
+    .HowWeWork__consultation-contract{
+        width: 118px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: 400;
+        padding: 11px 29px 14px 30px;
+    }
+    /* Question */
+    .question__header{
+        margin-top: 60px;
+        margin-bottom: 16px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: normal;
+    }
+    .question__word{
+        margin: 30px 0;
+        width: 243px;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: normal;
+    }
+    .question__image{
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/+х-320.svg);
+    }
+    .question__item{
+        align-items: center;
+    }
+    /* Footer */
+    .application{
+        width: 290px;
+    }
+    .application__header{
+        margin-top: 32px;
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: normal;
+    }
+    .application__mainblock{
+        flex-direction: column;
+        border-bottom: #595959 solid 1px;
+        padding-bottom: 16px;
+    }
+    .application__button{
+        padding: 12px 24px;
+        /* width: 180px; */
+        height: 40px;
+        margin-top: 25px;
+        margin-bottom: 11px;
+    }
+    .application__blockcheckbox{
+        margin: 0;
+        margin-top: 11px;
+
+    }
+    /* Info */
+    .info{
+        display: flex;
+        width: 290px;
+        flex-direction: column;
+        margin-top: 16px;
+        margin-bottom: 32px;
+        justify-content: center;
+        align-items: center;
+    }
+    .info__logo{
+        display: inline-block;
+        width: 131px;
+        height: 42px;
+        background-image: url(../img/Logo-white-320.svg);
+        background-repeat: no-repeat;
+
+    }
+    .footer{
+        min-width: 320px;
+        }
+}
